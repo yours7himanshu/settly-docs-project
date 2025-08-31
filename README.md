@@ -71,8 +71,8 @@ GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3000
 
 # Admin Credentials (not stored in database)
-ADMIN_EMAIL=admin@example.com
-ADMIN_PASSWORD=your_secure_admin_password
+ADMIN_EMAIL=admin@settyl.com
+ADMIN_PASSWORD=admin12345
 ```
 
 **Start the backend server:**
@@ -167,7 +167,11 @@ The admin interface will run on `http://localhost:5174`
 1. **Start all three services** (backend, client, admin)
 2. **Register a new user** at `http://localhost:5173/register`
 3. **Login** and start creating documents
-4. **Access admin panel** at `http://localhost:5174` using the admin credentials from your `.env` file
+4. **Access admin panel** at `http://localhost:5174` using the admin credentials:
+   - **Email**: `admin@settyl.com`
+   - **Password**: `admin12345`
+
+**Note**: Make sure to update your backend `.env` file with these admin credentials for the admin login to work.
 
 ## 👥 User Roles
 
@@ -328,4 +332,3 @@ admin/
 
 
 
-**Happy coding! 🚀**
