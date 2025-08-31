@@ -26,10 +26,8 @@ export default function Register() {
     setLoading(true)
     try {
       const { data } = await api.post('/auth/register', { name, email, password })
-      setToken(data.token)
-      setUser(data.user)
-      toast.success(`Welcome to TeamDocs, ${data.user.name}!`)
-      navigate('/')
+      toast.success(`Account created successfully! Please log in with your credentials.`)
+      navigate('/login')
     } catch (error) {
       const message = error.response?.data?.error || 'Registration failed'
       toast.error(message)
