@@ -47,7 +47,7 @@ Before running this project, make sure you have:
 
 ```bash
 git clone <repository-url>
-cd steyll
+cd settly-docs-project
 ```
 
 ### 2. Backend Setup
